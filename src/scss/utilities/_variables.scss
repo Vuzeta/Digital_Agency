@@ -1,0 +1,53 @@
+//COLORS
+
+//WHITE
+$color-white: #fff;
+
+//BLACK
+$color-dark: #333332;
+$color-dark-lighter: #040404;
+
+//GRAY
+$color-grey: #313131;
+$color-grey-lighter: #a3a3a3;
+$color-grey-darker: #505050;
+
+//ORANGE
+$color-orange: #fc9e20;
+
+//BG GRADIENT
+$bg-gradient: linear-gradient(to right, #de813c 0%, #3f519a 100%); //background-image
+
+
+//FONT FAMILY
+$font-primary: Lato;
+$font-headline: Bernadette;
+
+//FONT-SIZE
+$html-font: 62,5%;               //10px
+$font-size-normal: 1.6rem;       //16px
+$font-size-medium: 1.8rem;       //18px
+$font-size-medium-large: 2rem;   //20px
+$font-size-large: 2.5rem;        //25px
+$font-size-XL: 3.7rem;           //37px
+$font-size-XXL: 5rem;            //50px
+$font-size-header: 11.1rem;      //111px
+
+//FONT-WEIGHT
+$font-weight-light: 300;  
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;  
+
+//FONT-STYLE
+$font-style-normal: normal;
+$font-style-italic: Italic;
+
+//LETTER SPACING
+$spacing-small: 0.2px;
+$spacing-normal: 0.4px;
+$spacing-medium: 0.6px;
+
+//LINE HEIGHT
+$line-height-small: 24px;
+$line-height-normal: 30px;
