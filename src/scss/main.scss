@@ -3,6 +3,17 @@
 
 @import 'tools/reset';
 
-.container {
-  background-image: url('../images/employees_2.jpg');
+@import 'layout/navigation';
+
+* {
+  box-sizing: border-box;
 }
+html {
+  font-size: 62.5%;
+}
+  
+body {
+  font-family: $font-primary;
+  font-size: $font-size-normal
+}
+

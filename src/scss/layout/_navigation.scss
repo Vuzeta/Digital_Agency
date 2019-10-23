@@ -1,0 +1,47 @@
+.navigation {
+    display: flex;
+    flex-direction: column;
+    background-image: $bg-gradient;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        height: 10vh;
+        margin: 2%;
+        align-items: center;
+    }
+
+    &__logo {
+        padding: 2%;
+    }
+
+    &__list {
+        padding: 0;
+        text-align: center;
+        list-style: none;
+        color: $color-white;
+    }
+
+    &__hamburger {
+        padding: 2%;
+        text-align: right;
+        cursor: pointer;
+    }
+
+    &__hamburger--icon {
+        font-size: $font-size-XL;
+        color: $color-white;
+    }
+
+    &__item {
+        margin: 5% 0px;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $color-white;
+        font-size: $font-size-medium;
+    }
+
+
+}
