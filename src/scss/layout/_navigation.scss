@@ -9,6 +9,7 @@
   padding: 10px;
   background-image: linear-gradient(to right, #de813c 0%, #3f519a 100%);
   box-shadow: 0 0 5px black;
+  z-index: 999999;
 
   @include mq(large) {
     flex-direction: row;
@@ -45,7 +46,7 @@
 
   &__item {
     margin: 10px 0;
-    }
+  }
 
   &__link {
     font-weight: $font-weight-bold;
@@ -67,4 +68,3 @@
     }
   }
 }
-  
