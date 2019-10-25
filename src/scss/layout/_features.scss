@@ -1,0 +1,26 @@
+.features {
+    &__image--box {
+        display: none;
+    }
+
+    &__box {
+        text-align: center;
+    }
+
+    &__title {
+        font-family: $font-headline;
+        font-size: $font-size-XL;
+        margin-bottom: 30px;
+    }
+
+    &__description {
+        padding: 0px 20px;
+        line-height: $line-height-small;
+    }
+
+    &__btn {
+        margin: 20px auto;
+        background-image: $bg-gradient;
+        color: $color-white;
+    }
+}
