@@ -51,11 +51,13 @@
     }
   }
 
-  &__heading {
+  &__title {
+    color: $color-dark;
     margin: 20px 0px;
   }
 
   &__description {
+    color: $color-dark-lighter;
     padding: 20px;
   }
 
@@ -97,6 +99,11 @@
       bottom: -30px;
       left: 50%;
       transform: translateX(-50%);
+
+      &:hover {
+        box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
+        bottom: -25px;
+      }
     }
   }
 }
