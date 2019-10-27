@@ -1,0 +1,129 @@
+.service {
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: #f4f4f4;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  @include mq(large) {
+    flex-direction: row;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0px 5%;
+    flex-basis: 400px;
+
+    @include mq(large) {
+      flex-basis: 100%;
+      text-align: left;
+    }
+  }
+
+  &__description {
+    @include mq(large) {
+      padding-right: 25%;
+    }
+  }
+
+  &__title {
+    font-family: $font-headline;
+    font-size: $font-size-XL;
+  }
+
+  &__btn {
+    margin: 0 auto;
+    background-image: $bg-gradient;
+    color: $color-white;
+
+    @include mq(large) {
+      margin: 20px 0px;
+
+      &:hover {
+        box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
+        transform: translate(0px, -2px) scale(1.05);
+      }
+    }
+  }
+
+  &__image {
+    width: 100%;
+    flex-grow: 1;
+    height: 50vh;
+    background-image: url('../images/services.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  &__contact {
+    display: none;
+    background-image: $bg-gradient;
+
+    @include mq(large) {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 20%;
+      height: 98%;
+      transform: translate(-50%, -50%);
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      padding: 20px;
+      border-radius: 10px;
+      color: $color-white;
+    }
+
+    @include mq(xxlarge) {
+      width: 15%;
+      height: 90%;
+    }
+  }
+
+  &__contact--box {
+    padding: 5px;
+    transition: 0.2s linear;
+
+    @include mq(large) {
+      &:hover {
+        color: #000;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__contact--box:nth-child(odd) {
+    border-right: 2px solid rgba(255, 255, 255, 0.2);
+    border-right-style: dotted;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    border-bottom-style: dotted;
+  }
+
+  &__contact--box:nth-child(even) {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    border-bottom-style: dotted;
+  }
+
+  &__contact--box:nth-last-child(1) {
+    border-bottom: none;
+    border-bottom-style: none;
+  }
+
+  &__contact--box:nth-last-child(2) {
+    border-bottom: none;
+    border-bottom-style: none;
+  }
+
+  &__contact--icon {
+    font-size: 3rem;
+    padding: 20px;
+  }
+
+  &__contact--desc {
+  }
+}

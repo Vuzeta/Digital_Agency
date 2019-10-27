@@ -79,9 +79,11 @@
     background-image: $bg-gradient;
     color: $color-white;
 
-    &:hover {
-      box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
-      transform: translate(0px, -2px) scale(1.05);
+    @include mq(large) {
+      &:hover {
+        box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
+        transform: translate(0px, -2px) scale(1.05);
+      }
     }
 
     @include mq(xlarge) {
