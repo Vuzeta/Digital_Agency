@@ -11,8 +11,9 @@
 
   @include mq(xxlarge) {
     top: -120px;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
+    padding: 0px 15%;
   }
 
   &__wrapper {
@@ -38,11 +39,40 @@
     margin-bottom: 40px;
     line-height: 24px;
     min-height: 450px;
+    transition: 1.3s;
 
     @include mq(large) {
       flex-basis: 30%;
       border-radius: 12px;
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+
+      &:nth-child(1) {
+        transform: translateX(-250%);
+      }
+
+      &:nth-child(2) {
+        transform: translateY(250%);
+      }
+
+      &:nth-child(3) {
+        transform: translateX(250%);
+      }
+    }
+  }
+
+  &__box--active {
+    @include mq(large) {
+      &:nth-child(1) {
+        transform: translateX(0%);
+      }
+
+      &:nth-child(2) {
+        transform: translateX(0%);
+      }
+
+      &:nth-child(3) {
+        transform: translateX(0%);
+      }
     }
   }
 
