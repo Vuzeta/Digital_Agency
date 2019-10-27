@@ -11,7 +11,7 @@
   box-shadow: 0 0 5px black;
   z-index: 999999;
 
-  @include mq(large) {
+  @include mq(xlarge) {
     flex-direction: row;
     align-items: center;
   }
@@ -32,9 +32,10 @@
     @include mq(medium) {
       flex-direction: row;
       justify-content: space-around;
+      flex-wrap: wrap;
     }
 
-    @include mq(large) {
+    @include mq(xlarge) {
       display: flex;
       margin-top: 0px;
     }
@@ -53,6 +54,34 @@
     text-decoration: none;
     color: $color-white;
     padding: 0px 20px;
+    text-transform: uppercase;
+    transition: 0.3s linear;
+
+    @include mq(xlarge) {
+      position: relative;
+      top: 0;
+      left: 0;
+
+      &::after {
+        content: '';
+        display: block;
+        width: 0%;
+        height: 2px;
+        position: absolute;
+        bottom: -5px;
+        left: 10%;
+        background-color: $color-orange;
+        transition: 0.3s linear;
+      }
+
+      &:hover::after {
+        width: 80%;
+      }
+
+      &:hover {
+        text-shadow: 1px 1px 1px black;
+      }
+    }
   }
 
   &__hamburger {
@@ -63,7 +92,7 @@
     right: 20px;
     cursor: pointer;
 
-    @include mq(large) {
+    @include mq(xlarge) {
       display: none;
     }
   }
