@@ -1,4 +1,4 @@
-const AnimationFade = () => {
+const AnimationFacts = () => {
   const scrollValue = document.documentElement.scrollTop;
   const factsBox = [...document.querySelectorAll('.facts__box')];
   const boxFromTop = factsBox[0].offsetTop;
@@ -6,7 +6,6 @@ const AnimationFade = () => {
 
   if (window.innerWidth > 1023) {
     if (scrollValue > boxFromTop + boxOuterHeight / 2) {
-      console.log('animacja');
       factsBox.forEach(el => {
         el.classList.add('facts__box--active');
       });
@@ -20,4 +19,4 @@ const AnimationFade = () => {
   }
 };
 
-export default AnimationFade;
+export default AnimationFacts;
