@@ -1,19 +1,15 @@
 import '../scss/main.scss';
-import AnimationFacts from './animationFacts';
-import AnimationProgress from './animationProgress';
+import animationFacts from './animationFacts';
+import animationProgress from './animationProgress';
+import fixedNavigation from './fixedNavigation';
+import slideNavigation from './slideNavigation';
+import hamburger from './hamburger';
 
 //HAMBURGER MENU
-const hamburger = document.querySelector('.navigation__hamburger');
-const navigation = document.querySelector('.navigation__list');
+const hamburgerElement = document.querySelector('.navigation__hamburger');
 
-hamburger.addEventListener('click', () => {
-	if (hamburger.classList.contains('fa-bars'))
-		hamburger.classList.replace('fa-bars', 'fa-arrow-up');
-	else hamburger.classList.replace('fa-arrow-up', 'fa-bars');
-
-	navigation.classList.toggle('navigation__list--open');
-});
-
-document.addEventListener('scroll', () => AnimationFacts());
-
-document.addEventListener('scroll', () => AnimationProgress());
+hamburgerElement.addEventListener('click', () => hamburger(hamburgerElement));
+window.addEventListener('load', () => slideNavigation());
+document.addEventListener('scroll', () => animationFacts());
+document.addEventListener('scroll', () => animationProgress());
+document.addEventListener('scroll', () => fixedNavigation());

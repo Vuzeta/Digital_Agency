@@ -74,7 +74,7 @@
       transform: translate(-50%, -50%);
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      padding: 20px;
+      padding: 0px 20px;
       border-radius: 10px;
       color: $color-white;
     }
@@ -88,6 +88,7 @@
   &__contact--box {
     padding: 5px;
     transition: 0.2s linear;
+    cursor: pointer;
 
     @include mq(large) {
       &:hover {
@@ -122,8 +123,5 @@
   &__contact--icon {
     font-size: 3rem;
     padding: 20px;
-  }
-
-  &__contact--desc {
   }
 }

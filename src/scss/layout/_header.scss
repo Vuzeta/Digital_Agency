@@ -13,6 +13,10 @@
     padding-top: 0px;
   }
 
+  @include mq(xlarge) {
+    margin-top: 0px;
+  }
+
   &__wrapper {
     position: absolute;
     top: 50%;

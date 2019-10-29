@@ -1,10 +1,10 @@
-const AnimationFacts = () => {
+const animationFacts = () => {
   const scrollValue = document.documentElement.scrollTop;
   const factsBox = [...document.querySelectorAll('.facts__box')];
   const boxFromTop = factsBox[0].offsetTop;
   const boxOuterHeight = factsBox[0].offsetHeight;
 
-  if (window.innerWidth > 1023) {
+  if (window.screen.availWidth > 1023) {
     if (scrollValue > boxFromTop + boxOuterHeight / 2) {
       factsBox.forEach(el => {
         el.classList.add('facts__box--active');
@@ -19,4 +19,4 @@ const AnimationFacts = () => {
   }
 };
 
-export default AnimationFacts;
+export default animationFacts;
