@@ -1,0 +1,164 @@
+.best {
+    display: flex;
+    width:90%;
+    margin: 20px auto;
+    flex-direction: column;
+
+    @include mq(large) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    @include mq(xxlarge) {
+        margin: 100px auto;
+        height: 725px;
+    }
+
+    &__information {
+        @include mq(large) {
+            width: 35%;
+        }
+    }
+
+    &__information--wrapper {
+        text-align: center;
+    }
+
+    &__personalData {
+        font-family: $font-headline;
+        font-size: $font-size-XXL + 1rem;
+        color: $color-dark;
+        margin-bottom: 1.6rem;
+    }
+
+    &__workplace {
+        font-size: $font-size-medium-large;
+        font-weight: $font-weight-bold;
+        letter-spacing: $spacing-normal;
+        color: $color-grey-brown;
+        margin-bottom: 3.2rem;
+    }
+
+    &__about {
+        font-size: $font-size-medium;
+        line-height: $line-height-normal;
+        color: $color-dark-lighter;
+        font-weight: $font-weight-light;
+    }
+
+    &__skills {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 230px;
+        margin: 6rem 0px 2rem 0px;
+    }
+
+    &__skill--box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    &__skill {
+        font-weight: $font-weight-medium;
+        color: $color-dark;
+        font-size: $font-size-medium-large;
+        letter-spacing: $spacing-medium;
+        margin-bottom: 10px;
+    }
+
+    &__percent {
+        font-size: $font-size-medium;
+        font-weight: $font-weight-medium;
+        color: $color-dark;
+    }
+
+    &__bar--wrapper {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 15px;
+        border-radius: 12px;
+        background-color: #e0e0e0;
+    }
+
+    &__progress {
+        position: absolute;
+        top: -15px;
+        width: 80%;
+        height: 15px;
+        background-image: $bg-gradient;
+        border-radius: 12px;
+    }
+
+    &__designer{
+        display: flex;
+        flex-direction: column;
+        @include mq(small) {
+            flex-direction: row;
+        }
+        @include mq(large) {
+            width: 60%;
+        }
+    }
+
+    &__designer--photo{
+        background-image: url('../images/anita_photo.jpg');
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 400px;
+
+        @include mq(large) {
+            height: 100%;
+        }
+    }
+
+    &__designer--information {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 400px;
+        padding: 20px;
+        background-image: $bg-gradient;
+        text-align: center;
+
+        @include mq(large) {
+            height: 100%;
+            width: 80%;
+        }
+    }
+
+    &__designer--description {
+        font-size: $font-size-medium-large;
+        font-weight: $font-weight-light;
+        line-height: $line-height-normal;
+        letter-spacing: $spacing-normal;
+        color: $color-white;
+    }
+
+    &__social {
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+        margin: 0 auto;
+
+        @include mq(large) {
+            width: 80%;
+        }
+
+        @include mq(xxlarge) {
+            width: 50%;
+        }
+    }
+
+    &__social--icon {
+        font-size: 4rem;
+        color: $color-white;
+        cursor: pointer;
+    }
+}
