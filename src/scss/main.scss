@@ -24,6 +24,7 @@ html {
 body {
   font-family: $font-primary;
   font-size: $font-size-normal;
+  overflow-x: hidden;
 }
 
 h1,
