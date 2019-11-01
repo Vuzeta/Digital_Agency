@@ -3,7 +3,7 @@
 ### Description 
 
 Creating the Digital Agency project, I inspected the PSD project from PSDFreebies.com
-The project aimed at repeating skills related to Flexbox, Grid, Responsivity, BEM methodology and Webpack.
+The project aimed at repeating skills related to Flexbox, Grid, Responsive Web Design, BEM methodology and Webpack.
 
 ------------
 ### Technology used:
