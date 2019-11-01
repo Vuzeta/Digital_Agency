@@ -1,0 +1,112 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-image: url('../images/city_640.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  @include mq(large) {
+    background-image: url('../images/city_1280.jpg');
+    background-attachment: fixed;
+    background-position: bottom bottom;
+  }
+
+  @include mq(xxlarge) {
+    background-image: url('../images/city_1920.jpg');
+  }
+
+  &__bg {
+    background-image: linear-gradient(
+      to right,
+      rgba(222, 129, 60, 0.9) 0%,
+      rgba(63, 81, 154, 0.9) 100%
+    );
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+    padding-top: 50px;
+    font-size: $font-size-XL;
+    font-family: $font-headline;
+    text-align: center;
+    color: $color-white;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    list-style: none;
+    padding: 50px 0px;
+
+    @include mq(small) {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    @include mq(xxlarge) {
+      width: 50%;
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin: 20px 0;
+
+    @include mq(small) {
+      width: 10%;
+    }
+  }
+
+  &__link {
+    display: block;
+    width: 55px;
+    height: 55px;
+    background-position: center center;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    border: 2px solid $color-white;
+    border-radius: 50%;
+    transition: 0.3s linear;
+    transform: translate(0%, 0%);
+
+    @include mq(xlarge) {
+      &:hover {
+        background-color: $color-orange;
+        transform: translate(0%, -10%);
+        box-shadow: 0 4px 16px rgba(29, 32, 25, 0.5);
+      }
+    }
+
+    @include mq(xxlarge) {
+      width: 65px;
+      height: 65px;
+    }
+  }
+
+  &__item:nth-child(1) &__link {
+    background-image: url('../images/facebook.svg');
+  }
+  &__item:nth-child(2) &__link {
+    background-image: url('../images/google-plus.svg');
+  }
+
+  &__item:nth-child(3) &__link {
+    background-image: url('../images/twitter.svg');
+  }
+  &__item:nth-child(4) &__link {
+    background-image: url('../images/youtube.svg');
+  }
+  &__item:nth-child(5) &__link {
+    background-image: url('../images/linkedin.svg');
+  }
+  &__item:nth-child(6) &__link {
+    background-image: url('../images/digg.svg');
+  }
+}
