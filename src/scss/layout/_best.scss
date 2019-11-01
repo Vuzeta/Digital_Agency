@@ -161,12 +161,13 @@
     font-size: 4rem;
     color: $color-white;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.3s;
 
     @include mq(large) {
       &:hover {
-        color: #000;
+        color: $color-orange;
         transform: translateY(-3px);
+        text-shadow: 0 4px 16px rgba(29, 32, 25, 0.5);
       }
     }
   }

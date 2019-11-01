@@ -1,0 +1,80 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+
+    @include mq(small) {
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+      margin: 20px auto;
+    }
+
+    @include mq(small) {
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+      margin: 20px auto;
+    }
+
+    @include mq(large) {
+      width: 80%;
+    }
+
+    @include mq(xxlarge) {
+      width: 50%;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+
+    @include mq(small) {
+      width: 33.333333%;
+    }
+  }
+
+  &__item-info {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+
+    @include mq(small) {
+      width: 80%;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__title {
+    color: $color-grey;
+    font-size: $font-size-medium;
+    font-weight: $font-weight-bold;
+  }
+
+  &__icon {
+    font-size: $font-size-XL;
+    color: $color-orange;
+    width: 20%;
+    text-align: center;
+
+    @include mq(small) {
+      width: 20%;
+      margin-right: 10px;
+    }
+  }
+
+  &__copy {
+    padding: 10px 0px;
+    text-align: center;
+    line-height: $line-height-normal;
+    color: $color-grey-darker;
+  }
+}
